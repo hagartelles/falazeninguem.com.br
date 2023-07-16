@@ -1,10 +1,10 @@
-<div class="searchbar">
-                <input type="text" id="toSearch" placeholder="Buscar">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
 
+Descrição do Site
+
+falazeninguem é um site institucional focado em compartilhar noticias e ações politicas tanto no brasil quanto no paraná ( principalmente na região da Grande Curitiba )
+
+=============================================================================================================
 Dimensões da imagem do Slider
-
 min 312x312
 medium 506x506
 
@@ -14,23 +14,21 @@ A altura máxima vai ser de 640px
 
 Tamanho máximo 1106x640
 .
+=============================================================================================================
+Home 
+Composta de header / main / footer
 
-fora a home vão ser 5 pag
+header:
+Cabeçalho:
+  1.logo
+  2.menu - Links para a a home, noticias, e sobre, 2 botões para modal(Agenda, Contato) 
+  3.menu mobile - Links para a a home, noticias, e sobre, 2 botões para modal(Agenda, Contato)
 
-1. Quem somos
-visao, missao e valor
-nossa historia
-FAQ perguntas frequentes
+Main:
+  1.Slider
+  2.Noticias - Destaques
 
-2. O que fazemos
-todos os projetos
-
-3. Midia
-noticias
-historias de vida
-
-4. Agenda
-cronograma mênsal
-
-5. Fale conosco
-formulário nome, telefone, email, assunto, descrição.
+Footer: 
+  1. Quem somos
+  2. Contato
+  3. Redes sociais
