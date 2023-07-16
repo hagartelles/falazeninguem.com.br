@@ -1,0 +1,644 @@
+/*-------------------------- Esseticals --------------------------*/
+
+:root{
+
+    /* Collors */
+    --main-red: #be3144;
+    --main-red-background: hsla(352, 59%, 47%, 0.603);
+    --russian-violet: hsl(252, 80%, 16%);
+    --flourescent-blue: #00f9ef;
+    --heliotrope-gray: #aba6bd;
+    --dark-violet: hsl(252, 100%, 12%);
+    --space-cadet: hsl(276, 100%, 12%);
+    --blue-ryb: #0052ff;
+    --white: #ffffff;
+
+    --gradient: linear-gradient(to right, var(--flourescent-blue), var(--blue-ryb));
+
+/*  ## Typography
+    ### Font Family */
+    --ff-josefin: 'Josefin sans', sans-serif;
+    
+    /* ### Font Size */  
+    --fs-1: 2.5rem;
+    --fs-2: 1.8rem;
+    --fs-3: 1.7rem;
+    --fs-4: 1.4rem;
+    
+    /* ### Font Weight */
+    --fw-500: 500;
+    --fw-700: 700;
+
+    /* ## Transition */
+    --transition: 0.25s ease-in-out;
+
+    /* ## Spacing */
+    --section-padding: 3rem;
+
+    /*Height - fixed menu*/
+    --heightCalc:calc(100vh - 10rem)
+
+}
+
+/*-------------------------- Media --------------------------*/
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+          font-size: 60%;
+        }
+    }
+      
+    /* 980px / 16px = 61.25em */
+    @media (max-width: 61.25em) {
+        html {
+          font-size: 58%;
+        }
+    }
+      
+    /* 460px / 16px = 28.75em */
+    @media (max-width: 28.75em) {
+        html {
+          font-size: 55%;
+        }
+    }
+
+    
+
+
+    /*-------------------------- RESET --------------------------*/
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+html {
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+ 
+a,
+img,
+span,
+input,
+ion-icon { display: block; }
+    /*-------------------------- GLOBAL STYLE --------------------------*/
+  
+body {
+    font-family: var(--ff-josefin);
+    font-size: 1.6rem; /* 16px */
+    font-weight: var(--fw-500);
+    line-height: 1.4;
+    background: var(--dark-violet);
+    color:var(--white);
+    overflow-x:hidden;
+}
+  
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+h1,h2 {
+    /* text-shadow:0 3px 5px hsla(0, 0%, 0%, 0.8); */
+    text-align: center;
+    margin:2rem 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* /*-------------------------- ADS --------------------------*/
+main{
+    margin-bottom: 2rem;
+}
+
+.adsArea{
+    display:flex;
+    justify-content: center;
+
+}
+.ads{
+    width:100%;
+    display: flex;
+    border:1px solid white;
+    margin:0 1rem;
+    padding:.5rem .5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/* *********  ESTILO VÍDEOS********* */
+
+.iframe-div{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 375px;
+    height:315px;
+
+    @media (min-width:767px){
+        width:560px;
+    }
+
+    @media (min-width:1023px){
+        width:640px;
+        height:360px
+    }
+    @media (min-width:1339px){
+        width: 966px;
+        height:543px
+    }
+}
+
+/*-------------------------- CONTAINER --------------------------*/
+.layer-container{
+    margin-top: 15rem;
+}
+
+.container{
+    padding:0 1rem;
+    min-height: 1rem;
+    margin:3rem auto 3rem;
+}
+
+@media(min-width: 576px) {
+    .container {
+        max-width:540px;
+        margin:3rem auto 6rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+
+.first-content{
+    border:solid .1rem var(--white);
+    border-radius: 3em;
+}
+
+                    /* END CONTAINER */
+
+.bar-divider{
+    background-color: white;
+    margin: -2rem auto 2rem;
+    width: 50%;
+    height:.1rem;
+    border-radius: 2rem ;
+}
+
+.flex-content{
+    display:flex;
+}
+
+
+ /*-------------------------- END GLOBAL STYLE --------------------------*/
+
+ 
+/* ********* NEWS SECTIONS ********* */
+
+.grid-template {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 6rem;
+}
+
+
+
+.grid-element{
+    border:solid .1rem white;
+    border-radius: 3rem;
+    overflow: hidden;
+    padding:0;
+}
+
+.grid-element a {
+    height:100%;
+    padding:0;
+}
+
+.grid-figure img{
+    width: 100%;
+    height:50%;
+}
+
+.news-text-div {
+    width: 100%;
+    height:100%;
+    padding:2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:var(--dark-violet);
+}
+
+.news-text-div p{
+ font-size: var(--fs-4);
+ 
+}
+
+/* ********* END NEWS SECTIONS ********* */
+
+.seeMore{
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: underline;
+}
+
+.seeMore:hover{
+    color: var(--main-red);
+    
+
+}
+
+
+/* ********* FOOTER ********* */
+
+
+
+                    /* mini-about */
+
+                    
+
+.mini-about {
+    padding:0 1rem;
+    font-size: var(--fs-1);
+}
+
+
+.mini-about img{
+    margin:0 auto 2.4rem;
+}
+.text{
+    text-align:center;
+}
+
+                    /* CONTATO */
+
+.contacts{
+    padding:0 1rem;
+    text-align: center;
+    font-size: var(--fs-1)
+}
+
+.contacts h2{
+    font-size: 3rem;
+    width: 10rem;
+    height:8rem;
+    margin:2.4rem auto 0;
+}
+
+.contacts p{
+    display:flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+                    /* social links */
+.social-media h2{
+    font-size: 3rem;
+    width: 20rem;
+    height:8rem;
+    margin:2.4rem auto 0;
+}
+
+/* .margin-top{
+    margin-top:2rem;
+} */
+
+.flex-media{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:2rem;
+    font-size: var(--fs-1);
+}
+
+.media-icon{
+    width: 2.5rem;
+    margin-right:1rem;
+}
+
+@media (max-width:767px){
+    .contacts, .mini-about, .flex-media{
+        font-size: var(--fs-4);
+    }
+}
+
+
+/* ********* START FORM  ********* */
+/* ********* modal form  ********* */
+.window-modal {
+    width:100vw;
+    height:var(--heightCalc);
+    position:fixed;
+    z-index: 999;
+    top:100px;
+    left:0; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    transition: var(--transition);
+    
+}
+
+
+.modal {
+    /* background-color: hsla(252, 100%, 32%, 1); */
+    background-color: rgba(255,255,255,.7);
+    color: var(--dark-violet);
+    position:relative;
+    width:60%;
+    min-width:320px;
+    min-height: 500px;
+    padding:40px;
+    border-radius: 2rem;
+}
+
+.close-btn {
+    position:absolute;
+    top:.5rem;
+    right:.5rem;
+    border:solid 2px var(--main-red);
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    color:var(--main-red);
+    background-color: transparent;
+    cursor:pointer;
+    font-size: var(--fs-4);
+}
+
+
+
+/* ********* end modal FORM  ********* */
+
+
+
+form h1{
+    text-align: center;
+    width: 100%;
+    
+}
+
+form p{
+    text-align: center;
+    margin:1rem 0;
+}
+
+.input-single{
+    position:relative;
+    margin:2rem 0;
+}
+
+.input-single label {
+    position:absolute;
+    left: 0.2rem;;
+    bottom: 0;
+    transition: all .2s;
+    cursor:text;
+}
+
+.input-area {
+    width: 100%;
+    height:2rem;
+    border:0;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    border-bottom: 2px solid #be3144;
+    background-color: rgba(255,255,255,0.9);
+    padding:1rem;
+    outline: 0;
+    color: black;
+}
+
+form .input-single .input-area:focus ~ label,
+form .input-single .input-area:valid ~ label{
+    transform: translateY(-2rem) scale(1.1);
+    font-size: 1.2rem;
+}
+
+
+
+form .input-message{
+    display:flex;
+    flex-direction: column-reverse;
+    margin:2rem 0;
+    
+}
+
+form .input-message label{
+    margin-bottom: .5rem;
+    border-bottom: 2px solid #be3144;
+}
+
+form .input-message textarea{
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    outline: none;
+    background-color: rgba(255, 255, 255, .9);
+    
+    
+}
+
+
+
+/*TODO corrigir o alinhamento do botão */
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding:1rem 3rem;
+    border: 0.1rem solid #be3144;
+    border-radius: 2rem;
+    background-color:#be3144;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+form input[type=submit]:hover{
+    color:#be3144;
+    background-color: white;
+}
+
+/* ********* Estilo da AGENDA  ********* */
+
+.schedule-window-modal{
+    width:100%;
+    height:var(--heightCalc);
+    position:fixed;
+    z-index: 999;
+    top:100px;
+    left:0; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    transition: var(--transition);
+
+}
+
+.schedule{
+    padding:1rem;
+}
+
+.schedule .iframe-div {
+    /* border:1px solid red; */
+    width: 100%;
+    height:170px;
+    margin:0;
+
+    @media (min-width:767px){
+        width:100%;
+        height:249px;
+    }
+
+    @media (min-width:1023px){
+        width:100%;
+        height:336px;
+    }
+    @media (min-width:1339px){
+        width: 100%;
+        height:474px;
+    }
+}
+
+
+.schedule h2{
+    font-size: 4rem;
+    margin: 1rem 0 4rem;
+    @media (min-width:1023px){
+        font-size:5rem;
+    }
+}
+
+
+
+.schedule p{
+    margin:2rem 1rem;
+    font-size: var(--fs-2);
+    cursor: pointer;
+    @media (min-width:1023px){
+        font-size:var(--fs-1)
+    };
+    
+}
+
+
+@keyframes openModal {
+ from{
+    opacity:0;
+    transform:translate3d(0, -20px, 5px)
+ }   
+ to {
+    opacity: 1;
+    transform:translate3d(0,0,0)
+ }
+}
+
+.opened .modal{
+    animation: openModal var(--transition);
+}
+
+
+.opened{
+    visibility: visible;
+}
+
+
+/*whatsapp btn*/
+
+.whatsApp{
+    position:fixed;
+    z-index:2000;
+    bottom: .8rem;
+    right:.5rem;
+    cursor: pointer;
+    animation: whatsAppAnimation 5s infinite;
+
+    @media (min-width:1023px){
+        right:1rem;
+    }
+
+    @media (min-width:1439px){
+        right:3rem;
+        bottom: 3rem;
+    }
+}
+
+.whatsApp-img:hover{
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+.whatsApp-img{
+    width:6rem;
+
+    @media (min-width:1023px){
+        width: 10rem;
+    }
+
+    @media (min-width:1439px){
+        width: 15rem;
+    }
+}
+
+@keyframes whatsAppAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(.5rem)
+    }
+    100% {
+        transform: translateY(0)
+    }
+    
+}
+

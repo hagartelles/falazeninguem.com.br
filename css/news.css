@@ -1,0 +1,29 @@
+.news-content{
+    width:100%;
+}
+
+.news-content p{
+    margin: 2rem auto; 
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+.news-img{
+    width:300px;
+    
+    @media (min-width:767px) {
+        width:650px
+    }
+}
+
+.news-main h1{
+    padding:1rem;
+}
+
+.news {
+    margin-top: 15rem;
+}
+

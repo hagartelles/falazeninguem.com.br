@@ -1,0 +1,51 @@
+main.container{
+    margin-top: 20rem;
+}
+
+.about-content{
+    background-color: hsl(252, 100%, 30%);
+    border-radius: 2rem;
+    padding: 1rem;
+    @media (min-width:424px) {
+        padding: 3rem;
+    }
+
+}
+
+
+.img-about{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.img-about img{
+    width: 30rem ;
+}
+
+.about-end .vision p, .mission p, .values p{
+    font-size: var(--fs-4);
+    
+    @media (min-width:424px) {
+        font-size:var(--fs-3)
+    }
+
+}
+
+.about-end p{
+    margin-bottom: 2rem;
+}
+
+.about-end p i{
+    cursor: pointer;
+}
+
+.vision h2, .mission h2, .values h2{
+    color:var(--main-red);
+}
+
+.div-form{
+    
+    padding:2rem;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/b4c323d369.js" crossorigin="anonymous"></script>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <title>Zé Ninguém - O que fazemos</title>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="container-top-site">
+           
+<!-- -------------------------- logo & social media links -------------------------- -->
+            <div class="fix-header">
+                <div class="logo icon">
+                    <a href="../index.html">
+                        <img src="../assets/img/LOGO-ZE-final.png" alt="Logo Zé Ninguem" class="logo-img">
+                    </a>
+                 </div>
+                 <nav id="nav-bar" class="nav-container">           
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="../index.html" target="_self">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../components/about.html" target="_self">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../components/news.html" target="_top">M&iacute;dia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" onclick="openSchedule()" >Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn-form" onclick="openForm()">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <button onclick="animateMenu()" id="btn-menu">
+                    <span class="row"></span>
+                    <span class="row"></span>
+                    <span class="row"></span>
+                </button>
+
+                <div class="icons-top link">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+           </div>
+
+            </div>
+                <!-- menu mobile -->
+            <nav id="nav-bar-mobile" class="nav-container-mobile">
+                <ul class="nav-menu-mobile">
+                    <li class="nav-item-mobile">
+                        <a href="../index.html" target="_self">Inicio</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="../components/about.html" target="_self">Quem Somos</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="../components/news.html" target="_top">M&iacute;dia</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#" onclick="openSchedule()">Agenda</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#" class="btn-modal" onclick="openForm()">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+                <!-- end menu mobile -->
+    <!-- -------------------------- end navbar & searchbar -------------------------- -->
+        </div>
+
+
+        
+    </header>
+
+
+    <main class="container" id="main-about">
+        <figure class="img-about">
+            <img src="../assets/img/LOGO-ZE-final.png" alt="" srcset="">
+        </figure>
+        <div class="container about-content">
+            <h1>O que fazemos</h1>
+        <div class="bar-divider"></div>
+        <div class="grid-template">
+            <div class="vision">
+                <h2>Vis&atilde;o</h2>
+                <p>
+                    Ser uma plataforma de destaque na promoção da inclusão social, política e econômica, dando voz às pessoas excluídas e proporcionando um espaço de debate e análise crítica das normas de comportamento impostas pela sociedade.
+                </p>
+            </div>
+            
+            <div class="values">
+                <h2>Valores</h2>
+                <p>
+                    Inclusão: Acreditamos na importância de dar voz e visibilidade às pessoas excluídas, promovendo a inclusão social e combatendo a marginalização.
+                </p>
+                <p>
+                    Debate e Análise Crítica: Valorizamos o diálogo aberto e construtivo, incentivando a análise crítica das questões que afetam a sociedade.
+                </p>
+                <p>
+                    Igualdade: Defendemos a igualdade de direitos e oportunidades para todos, independentemente de sua origem social, política ou econômica.
+                </p>
+                <p>
+                    Sustentabilidade: Reconhecemos a importância do cuidado com o meio ambiente e promovemos o debate sobre questões ambientais, visando um futuro mais sustentável.
+                </p>
+            </div>
+
+            <div class="mission">
+                <h2>
+                    Miss&atilde;o
+                </h2>
+                <p>
+                    Promover a visibilidade e empoderamento das classes sociais invisíveis perante o Estado e a sociedade, por meio de debates e discussões que abrangem questões sociais, políticas, econômicas e ambientais. Buscamos engajar e gerar consciência cidadã, contribuindo para a construção de uma sociedade mais justa e igualitária
+                </p>
+            </div>
+        </div>
+        <div class="bar-divider"></div>
+        <div class="about-end">
+            <p>
+                No Zé Ninguém, estamos comprometidos em promover a transparência e a participação cidadã. Se você identificar problemas em São José dos Pinhais, como questões relacionadas à saúde, educação, habitação, meio ambiente ou saneamento, estamos aqui para ajudar. Nossa equipe no Studio do Zé Ninguém irá analisar e discutir os problemas da sua comunidade, buscando soluções e promovendo a conscientização.
+            </p>
+
+            <p>
+                Além disso, se você possui um projeto para São José dos Pinhais, convidamos você a debatê-lo conosco em nosso site. Queremos que o município fique informado e envolvido nas iniciativas que visam o seu desenvolvimento e bem-estar.
+            </p>
+
+            <p>
+                E não se esqueça, oferecemos também a oportunidade de participar de podcasts e lives, onde você pode debater e compartilhar suas experiências sobre questões de gênero que lhe afligem. Estamos aqui para dar voz às suas preocupações e promover uma sociedade mais inclusiva e igualitária.
+            </p>
+
+            <p>
+                Junte-se a nós no Zé Ninguém e faça a diferença em São José dos Pinhais. Vamos construir um futuro melhor juntos.
+            </p>          
+        </div>
+
+        <div class="div-form">
+            <form action="" method="post">
+            
+                <h2>Entre em contato</h2>
+
+                <div class="input-single">
+                    <input type="text" name="name-box" id="name-box" class="input-area" required autocomplete="off">
+                    <label for="name-box">Nome:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="tel" name="name-tel" id="name-tel" class="input-area" required autocomplete="off">
+                    <label for="name-tel">Telefone:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="email" name="email-box" id="email-box" class="input-area" required autocomplete="off">
+                    <label for="email-box">E-mail:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="subject-box" id="subject-box" class="input-area" required autocomplete="off">
+                    <label for="subject-box">Assunto:</label>
+                </div>
+
+                <div class="input-message">
+                    <textarea wrap="hard" name="menssage-box" id="menssage-box" cols="30" rows="8" placeholder="Digite sua mensagem..."></textarea>
+                    <label for="menssage-box">Mensagem</label>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+        </div>
+
+        
+
+    </main>
+
+    
+    <footer clas="footer-div">
+        <div class="container grid-template">
+            <div class="mini-about">
+                <figure >
+                    <img src="../assets/img/LOGO-ZE-final.png" alt="" class="logo-img">
+                </figure>
+                <p class="text">
+                    Z&eacute; ningu&eacute;m &eacute; um site dedicado a promover a inclus&atilde;o social, pol&iacute;tica e economicamente. 
+                </p>
+                <br>
+                <p class="text">
+                    Nosso objetivo &eacute; fornecer uma plataforma segura e acolhedora onde essas pessoas possam se expressar livremente.
+                </p>
+            </div>
+            <div class="contacts">
+                <h2 class="contact">Contato</h2>
+                
+                <p>E-mail:<a href="mailto:"> lorem@ipsum.com</a></p>
+                <p>Telefone:<a href="tel:+"> +55(41)99999-9999</a></p>
+                <p>Celular<a href="tel:+"> +55(41)99999-9999</a></p>
+                <p class="">
+                Curitiba - PR
+                </p>
+            </div>
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <div class="flex-media">
+                    <a href="https://www.instagram.com/" class="flex-content"><i class="fa-brands fa-instagram media-icon"></i><p>Instagram</p></a>
+                </div>
+                <div class="flex-media margin-top">
+                    <a href="http://www.youtube.com" class="flex-content" ><i class="fa-brands fa-youtube media-icon"></i><p>Youtube</p></a>
+                </div>
+                <div class="flex-media margin-top">
+                    <a href="http://www.facebook.com" class="flex-content"><i class="fa-brands fa-square-facebook media-icon"></i><p>Facebook</p></a>
+                </div>
+                <div class="flex-media margin-top">
+                    <a href="http://www.twitter.com" class="flex-content"><i class="fa-brands fa-square-twitter media-icon"></i><p>Twitter</p></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- -------------------------- Form -------------------------- -->
+    <div class="window-modal" id="window-modal-form" >
+    
+        <div class="modal modal-form">
+            <button class="close-btn" id="close-btn">X</button>
+            
+            <form action="" method="post">
+            
+                <h1>Entre em contato</h1>
+                
+                <div class="input-single">
+                    <input type="text" name="name-box" id="name-box" class="input-area" required autocomplete="off">
+                    <label for="name-box">Nome:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="tel" name="name-tel" id="name-tel" class="input-area" required autocomplete="off">
+                    <label for="name-tel">Telefone:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="email" name="email-box" id="email-box" class="input-area" required autocomplete="off">
+                    <label for="email-box">E-mail:</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="subject-box" id="subject-box" class="input-area" required autocomplete="off">
+                    <label for="subject-box">Assunto:</label>
+                </div>
+
+                <div class="input-message">
+                    <textarea wrap="hard" name="menssage-box" id="menssage-box" cols="30" rows="8" placeholder="Digite sua mensagem..."></textarea>
+                    <label for="menssage-box">Mensagem</label>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="schedule-window-modal" id="schedule-window-modal">
+        <div class="modal schedule" id="schedule">
+            <button class="close-btn" id="close-btn-schedule">X</button>
+            
+            <h2>Agenda</h2>
+            <p>
+                V&iacute;deos TODOS OS DIAS com as principais not&iacute;cias do Brasil e do Mundo
+            </p>
+            <p>
+                Lives todas as QUINTAS com os principais assuntos da semana
+            </p>
+            <p>
+                Um Podcast mensal todo dia 15.
+            </p>
+        </div>
+    </div>
+
+    <div class="whatsApp">
+        <a href="https://wa.me//5521999060262?text=Oi%20Zé%20ninguém%20vamos%20conversar!!%20">
+            <img class="whatsApp-img" src="../assets/img/WhatsApp_icon.png" alt="">
+        </a>
+    </div>
+
+    <script src="../js/index.js"></script>
+    
+</body>
+</html>
