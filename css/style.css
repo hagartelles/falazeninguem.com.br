@@ -132,9 +132,8 @@ main{
 
 }
 .ads{
-    width:100%;
+    max-width: 1120px;
     display: flex;
-    border:1px solid white;
     margin:0 1rem;
     padding:.5rem .5rem;
     justify-content: center;
