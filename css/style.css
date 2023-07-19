@@ -97,7 +97,7 @@ body {
     font-size: 1.6rem; /* 16px */
     font-weight: var(--fw-500);
     line-height: 1.4;
-    background: var(--dark-violet);
+    background: var(--dark-violet) url("../assets/img/background2.png") ;
     color:var(--white);
     overflow-x:hidden;
 }
@@ -122,11 +122,8 @@ h1{
 }
 
 /* /*-------------------------- ADS --------------------------*/
-main{
-    margin-bottom: 2rem;
-}
-
 .adsArea{
+    max-width: 1140px;
     display:flex;
     justify-content: center;
 
@@ -168,7 +165,27 @@ iframe {
 
 /*-------------------------- CONTAINER --------------------------*/
 .layer-container{
-    margin-top: 15rem;
+    margin:15rem auto 3rem;
+    background-color: var(--dark-violet);
+    
+    @media (min-width:767px){
+        width:560px;
+    }
+
+    @media (min-width:1023px){
+        width:640px;
+        
+    }
+    @media (min-width:1339px){
+        width: 1200px;
+        
+    }
+
+    @media (min-width:2000px){
+        width: 1200px;
+        
+    }
+
 }
 
 .container{
@@ -199,6 +216,12 @@ iframe {
 @media(min-width: 1200px) {
     .container {
         max-width:1140px
+    }
+}
+
+@media(min-width: 2000px) {
+    .container {
+        max-width:1820px
     }
 }
 
@@ -276,7 +299,6 @@ iframe {
     justify-content: center;
     cursor: pointer;
     transition: var(--transition);
-    text-decoration: underline;
 }
 
 .seeMore:hover{
