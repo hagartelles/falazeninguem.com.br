@@ -120,17 +120,21 @@
                             <div class="slide-box first ">
                                 <!-- Para adicionar um LINK é necessário a tag IMG dentro da tag A.
                                 para a responsividade é necessário os outro tamanho dos items IMG -->
-                                <a href="./components/about.html">
-                                    <img src="./assets/img/LOGO-ZE-final.png" class="" alt="slide 1">
+
+                                <a href="./components/about.html"> <!-- PARA MUDAR O LINK DO SLIDE ALTERAR O CONTEÚDO DO HREF -->
+                                    <img src="./assets/img/LOGO-ZE-final.png" class="" alt="slide 1"> <!-- AQUI VOCÊ ALTERA A IMAGEM DO SLIDE, A IMAGEM DEVE ESTAR NA PASTA, E SOMENTE ALTERAR A PARTE FINAL DO CONTEÚDO DO "SRC" -->
                                     <p>Um espaço para a sua voz</p>
+                                    <!-- AQUI VOCÊ ALTERA O TEXTO VÍSIVEL DO SLIDE -->
                                 </a>
                             </div>
             
                             <div class="slide-box ">
-                                <a href="./components/news/news-01.html">
-                                    <img src="./assets/news-img/cofre-dinheiro-arthur-lira.jpg" class="" alt="Cofre com dinheiro e Arthur Lira">
+                                <a href="./components/news/news-01.html"><!-- PARA MUDAR O LINK DO SLIDE ALTERAR O CONTEÚDO DO HREF -->
+                                    <img src="./assets/news-img/cofre-dinheiro-arthur-lira.jpg" class="" alt="Cofre com dinheiro e Arthur Lira"><!-- AQUI VOCÊ ALTERA A IMAGEM DO SLIDE, A IMAGEM DEVE ESTAR NA PASTA, E SOMENTE ALTERAR A PARTE FINAL DO CONTEÚDO DO "SRC" -->
+                                    
                                     <div class="description">
                                         <h3 class="news-title">
+                                            <!-- AQUI VOCÊ ALTERA O TITULO VÍSIVEL DO SLIDE -->
                                             Polícia Federal deflagra operação contra investigados por envolvimento em esquema
                                         </h3>
                                     </div>
@@ -138,10 +142,11 @@
                             </div>
             
                             <div class="slide-box ">
-                                <a href="./components/news/news-02.html">
-                                    <img src="./assets/news-img/cristiano-zanin.jpeg" class="" alt="slide 2">
-                                    <div class="description">
+                                <a href="./components/news/news-02.html"><!-- PARA MUDAR O LINK DO SLIDE ALTERAR O CONTEÚDO DO HREF -->
+                                    <img src="./assets/news-img/cristiano-zanin.jpeg" class="" alt="slide 2"><!-- AQUI VOCÊ ALTERA A IMAGEM DO SLIDE, A IMAGEM DEVE ESTAR NA PASTA, E SOMENTE ALTERAR A PARTE FINAL DO CONTEÚDO DO "SRC" -->
+                                    <div class="description"> <!-- AQUI VOCÊ ALTERA O TITULO VÍSIVEL DO SLIDE -->
                                         <h3 class="news-title">
+                                            <!-- AQUI VOCÊ ALTERA O TITULO VÍSIVEL DO SLIDE -->
                                             Conheça Cristiano Zanin, advogado do presidente indicado ao STF
                                         </h3>
                                     </div>
@@ -188,7 +193,11 @@
 
                 <!-- GRID DIV START-->
                 <div class="grid-template">
-                    <!-- GRID ELEMENTS START -->
+                    <!-- Adicicione a nova A PARTIR DAQUI notícia aqui!!! -->
+                    
+                    <!-- ANTES DE ADICIONAR A NOVA NOTÍCIA NÃO ESQUEÇA DE MOVER ESSE BLOCO ABAIXO
+                    PARA DEPOIS DO COMENTÁRIO "NOTÍCIAS MAIS ANTIGAS" -->
+                    
                     <div class="grid-element">
                         <a href="./components/news/news-01.html" target="_self">
                             <figure class="grid-figure">
@@ -203,6 +212,11 @@
                             </div>
                         </a>
                     </div>
+
+
+                    <!-- A PARTIR SÃO AS NOTÍCIAS MAIS ANTIGAS -->
+
+
                     <div class="grid-element">
                         <a href="./components/news/news-02.html">
                             <figure class="grid-figure">
@@ -317,33 +331,34 @@
         <div class="modal modal-form">
             <button class="close-btn" id="close-btn">X</button>
             
-            <form action="" method="post">
-            
+            <form action="https://formsubmit.co/e7f842d166b575c1f2e69f4a1f9c2550" method="POST">>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.falazeninguem.com.br">
                 <h1>Entre em contato</h1>
                 
 
                 <div class="input-single">
-                    <input type="text" name="name-box" id="name-box" class="input-area" required autocomplete="off">
-                    <label for="name-box">Nome:</label>
+                    <input type="text" name="name" id="name" class="input-area" required autocomplete="off">
+                    <label for="name">Nome:</label>
                 </div>
 
                 <div class="input-single">
-                    <input type="tel" name="name-tel" id="name-tel" class="input-area" required autocomplete="off">
-                    <label for="name-tel">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" class="input-area" autocomplete="off">
+                    <label for="telfone">Telefone:</label>
                 </div>
 
                 <div class="input-single">
-                    <input type="email" name="email-box" id="email-box" class="input-area" required autocomplete="off">
-                    <label for="email-box">E-mail:</label>
+                    <input type="email" name="email" id="email" class="input-area" required autocomplete="off">
+                    <label for="email">E-mail:</label>
                 </div>
 
                 <div class="input-single">
-                    <input type="text" name="subject-box" id="subject-box" class="input-area" required autocomplete="off">
+                    <input type="text" name="subject" id="subject" class="input-area" required autocomplete="off">
                     <label for="subject-box">Assunto:</label>
                 </div>
 
                 <div class="input-message">
-                    <textarea wrap="hard" name="menssage-box" id="menssage-box" cols="30" rows="8" placeholder="Digite sua mensagem..."></textarea>
+                    <textarea wrap="hard" name="menssage-box" id="menssage-box" cols="30" rows="8" placeholder="Digite sua mensagem..." required></textarea>
                     <label for="menssage-box">Mensagem</label>
                 </div>
 

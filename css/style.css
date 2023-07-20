@@ -2,13 +2,13 @@
 
 :root{
 
-    /* Collors */
+    /* VÁRIÁVEIS DE CORES, SE ALTERAR UMA DESSAS CORES, VAI SER ALTERADO EM TODAS AS PÁGINAS*/
     --main-red: #be3144;
     --main-red-background: hsla(352, 59%, 47%, 0.603);
     --russian-violet: hsl(252, 80%, 16%);
     --flourescent-blue: #00f9ef;
     --heliotrope-gray: #aba6bd;
-    --dark-violet: hsl(252, 100%, 12%);
+    --dark-violet: hsl(252, 100%, 12%);   /* BACKGROUND PADRÃO */
     --space-cadet: hsl(276, 100%, 12%);
     --blue-ryb: #0052ff;
     --white: #ffffff;
@@ -97,7 +97,7 @@ body {
     font-size: 1.6rem; /* 16px */
     font-weight: var(--fw-500);
     line-height: 1.4;
-    background: var(--dark-violet) url("../assets/img/background2.png") ;
+    background: var(--dark-violet) url("../assets/img/background4.png") ;
     color:var(--white);
     overflow-x:hidden;
 }
